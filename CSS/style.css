@@ -1,0 +1,82 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(151, 130, 130)117, 117, 117);
+}
+
+header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: red;
+    text-align: center;
+}
+
+main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: royalblue;
+    text-align: center;
+}
+
+#div-name-email{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#name{
+    width: 90%;
+    border: 2px solid rgba(255, 0, 0, 0.281);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 1.5% 1%;
+}
+
+#name:focus{
+    border: 2px solid red;
+}
+
+#email{
+    width: 90%;
+    border: 2px solid rgba(255, 0, 0, 0.281);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 1.5% 1%;
+}
+
+#email:focus{
+    border: 2px solid red;
+}
+
+
+#number{
+    grid-column: 1/2;
+    width: 90%;
+    border: 2px solid rgba(255, 0, 0, 0.281);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 1.5% 1%;
+}
+
+#number:focus{
+    border: 2px solid red;
+}
+
+
+#dropdown{
+    grid-column: 2/3;
+    width:90%;
+    border: 2px solid rgba(255, 0, 0, 0.281);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 1.5% 1%;
+}
+footer{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: seagreen;
+}

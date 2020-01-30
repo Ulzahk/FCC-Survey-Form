@@ -4,7 +4,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 1fr 4fr 1fr;
-    background-color: rgb(151, 130, 130);
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -24,8 +25,15 @@ body {
 header{
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: red;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: -1px 0 #eee, 0 2px #eee, 1px 0 #eee, 0 -1px #eee;
     text-align: center;
+    line-height: 1.6;
+    margin-bottom:1% ;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-style: outset;
 }
 
 header p {
@@ -36,10 +44,12 @@ header p {
 main{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: royalblue;
+    background-image: linear-gradient(to right top, #0575e6, #0081de, #0089d1, #008fc1, #2193b0);
     padding-left: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
+    border: 4px outset gray;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6)
 }
 
 .bold-class{
@@ -48,29 +58,78 @@ main{
 
 .special-input{
     width: 95%;
-    border: 2px solid rgba(255, 0, 0, 0.281);
-    border-radius: 4px;
+    border: 3px solid gray;
     box-sizing: border-box;
     margin: 8px 0;
-    padding: 1.5% 1%;
+    padding: 2% 2%;
 }
 
 .special-input:focus{
-    border: 2px solid red;
+    border: 3px solid black;
 }
 
 select {
     font-family: 'Press Start 2P', cursive;
 }
 
+#div-radio{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border: 2px outset black;
+    display: grid;
+}
+
+#div-checkbox{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    margin-right: 5%;
+    border: 2px outset black;
+    display: grid;
+}
+
+#div-textarea{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#div-submit{
+    text-align: center;
+}
+
+#submit{
+    border: 2px solid black;
+    color: black;
+    background-color: #e7e7e7;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family:'Press Start 2P', cursive;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#submit:hover{
+    border: 2px solid #e7e7e7;
+    color: #e7e7e7;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-grey.png");
+}
 footer{
-    grid-column: 2/3;
+    grid-column: 1/4;
     grid-row: 3/4;
-    background-color: seagreen;
+    background-color: aquamarine;
+    margin-top: 5%;
 }
 
 @media only screen and (max-width: 600px){
     body{
-        grid-template-columns: 1fr 16fr 1fr;
+        grid-template-columns: 1fr 18fr 1fr;
+        grid-template-rows: 1fr 1.5fr 1fr;
     }
 }

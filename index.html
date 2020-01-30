@@ -13,22 +13,22 @@
     <header>
         <h1 id="title">Do You Want To Make Money Playing Video Games?</h1>
         <p id="description">Our team is searching for new video game testers
-             to improve the user experience on our projects, so fill this form
-              if you want to join us in this impresive adventure.
+            to improve the user experience on our projects, so fill this form
+            if you want to join us in this impressive adventure.
         </p>
     </header>
-    <main>
-        <form id="survey-form">
-                <div id="div-name"></div>
+        <main>
+            <form id="survey-form">
+                <div id="div-name">
                     <label id="name-label" class="bold-class">First Name</label>
                     <br />
                     <input type="text" id="name" class="special-input" placeholder="Enter your first name" required />
                 </div>
-                <div id="div-last-name"></div>
+                <div id="div-last-name">
                     <label id="last-name-label" class="bold-class">Last Name</label>
                     <br />
-                    <input type="text" id="last-name" class="special-input" placeholder="Enter your last name" required />
                 </div>
+                <input type="text" id="last-name" class="special-input" placeholder="Enter your last name" required />
                 <div id="div-email">
                     <label id="email-label" class="bold-class">Email</label>
                     <br />
@@ -37,13 +37,15 @@
                 <div id="div-phone-number">
                     <label id="phone-number-label" class="bold-class">Phone Number</label>
                     <br />
-                    <input type="tel" id="phone-number" class="special-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Example XXX-XXX-XXXX" required />
+                    <input type="tel" id="phone-number" class="special-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="Example XXX-XXX-XXXX" required />
                 </div>
                 <div id="div-number">
-                    <label id="number-label" class="bold-class">How many video games have you play in the last year?</label>
+                    <label id="number-label" class="bold-class">How many video games have you play in the last
+                        year?</label>
                     <br />
-                    <input type="number" id="number" class="special-input" min="1" max="99" placeholder="Enter your number here"
-                        required />
+                    <input type="number" id="number" class="special-input" min="1" max="99"
+                        placeholder="Enter your number here" required />
                 </div>
                 <div id="div-dropdown">
                     <label id="dropdown-label" class="bold-class">
@@ -59,50 +61,62 @@
                         <option id="option7">Other</option>
                     </select>
 
-                <div id="div-radio">
-                    <label id="label-radio" class="bold-class">Radio Buttons:</label>
-                    <br />
-                    <label id="label-radio1">
-                        <input type="radio" name="radio-buttons" id="radio1" value="1" />
-                        Radio Button 1
-                    </label>
-                    <label id="label-radio2">
-                        <input type="radio" name="radio-buttons" id="radio2" value="2" />
-                        Radio Button 2
-                    </label>
-                    <label id="label-radio3">
-                        <input type="radio" name="radio-buttons" id="radio3" value="3" />
-                        Radio Button 3
-                    </label>
+                    <div id="div-radio">
+                        <label id="label-radio-title" class="bold-class">How do you like to play?</label>
+                        <br />
+                        <label id="label-radio1">
+                            <input type="radio" name="radio-buttons" id="radio1" value="1" />
+                            Single
+                        </label>
+                        <label id="label-radio2">
+                            <input type="radio" name="radio-buttons" id="radio2" value="2" />
+                            Co-op
+                        </label>
+                        <label id="label-radio3">
+                            <input type="radio" name="radio-buttons" id="radio3" value="3" />
+                            Multiplayer
+                        </label>
+                    </div>
+                    <div id="div-checkbox">
+                        <label id="label-checkbox" class="bold-class label-checkbox">
+                            What kind of video game platform do you prefer? </label>
+                        <br />
+                        <label id="label-checkbox1">
+                            <input type="checkbox" id="checkbox1" value="1" />
+                            Nintento
+                        </label>
+                        <label id="label-checkbox2">
+                            <input type="checkbox" id="checkbox2" value="2" />
+                            Xbox
+                        </label>
+                        <label id="label-checkbox3">
+                            <input type="checkbox" id="checkbox3" value="3" />
+                            PlayStation
+                        </label>
+                        <label id="label-checkbox4">
+                            <input type="checkbox" id="checkbox4" value="4" />
+                            PC
+                        </label>
+                        <label id="label-checkbox5">
+                            <input type="checkbox" id="checkbox5" value="5" />
+                            Mobile
+                        </label>
+                        <label id="label-checkbox6">
+                            <input type="checkbox" id="checkbox6" value="6" />
+                            Other
+                        </label>
+                    </div>
                 </div>
-                <div id="div-checkbox">
-                    <label id="label-checkbox" class="bold-class">Checkboxes: </label>
+                <div id="div-textarea">
+                    <label id="label-textarea" class="bold-class">What's your favorite video game and why?</label>
                     <br />
-                    <label id="label-checkbox1">
-                        <input type="checkbox" id="checkbox1" value="1" />
-                        1
-                    </label>
-                    <label id="label-checkbox2">
-                        <input type="checkbox" id="checkbox2" value="2" />
-                        2
-                    </label>
-                    <label id="label-checkbox3">
-                        <input type="checkbox" id="checkbox3" value="3" />
-                        3
-                    </label>
+                    <textarea rows="4" cols="50" class="special-input" placeholder="Write here your answer"></textarea>
                 </div>
-            </div>
-            <div id="div-textarea">
-                <label id="label-textarea" class="bold-class">What's your favorite part in a videogame?:</label>
-                <br />
-                <textarea rows="5" cols="50" class="special-input" placeholder="Hi">
-                </textarea>
-            </div>
-            <div id="div-submit">
-                <input type="submit" id="submit" value="submit" />
-            </div>
-        </form>
-    </main>
+                <div id="div-submit">
+                    <input type="submit" id="submit" value="Submit" />
+                </div>
+            </form>
+        </main>
     <footer>
 
     </footer>

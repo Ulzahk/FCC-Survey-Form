@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: rgb(151, 130, 130)117, 117, 117);
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    background-color: rgb(151, 130, 130);
+    font-family: 'Press Start 2P', cursive;
 }
+
+::-webkit-input-placeholder { 
+    font-family: 'Press Start 2P', cursive;
+  }
+  ::-moz-placeholder { 
+    font-family: 'Press Start 2P', cursive;
+  }
+  :-ms-input-placeholder { 
+    font-family: 'Press Start 2P', cursive;
+  }
+  :-moz-placeholder { 
+    font-family: 'Press Start 2P', cursive;
+  }
 
 header{
     grid-column: 2/3;
@@ -12,20 +28,26 @@ header{
     text-align: center;
 }
 
+header p {
+    width: 80%;
+    padding-left: 10% ;
+}
+
 main{
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: royalblue;
-    text-align: center;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-#div-name-email{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.bold-class{
+    font-weight: bold;
 }
 
-#name{
-    width: 90%;
+.special-input{
+    width: 95%;
     border: 2px solid rgba(255, 0, 0, 0.281);
     border-radius: 4px;
     box-sizing: border-box;
@@ -33,50 +55,22 @@ main{
     padding: 1.5% 1%;
 }
 
-#name:focus{
+.special-input:focus{
     border: 2px solid red;
 }
 
-#email{
-    width: 90%;
-    border: 2px solid rgba(255, 0, 0, 0.281);
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 8px 0;
-    padding: 1.5% 1%;
+select {
+    font-family: 'Press Start 2P', cursive;
 }
 
-#email:focus{
-    border: 2px solid red;
-}
-
-
-#number{
-    grid-column: 1/2;
-    width: 90%;
-    border: 2px solid rgba(255, 0, 0, 0.281);
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 8px 0;
-    padding: 1.5% 1%;
-}
-
-#number:focus{
-    border: 2px solid red;
-}
-
-
-#dropdown{
-    grid-column: 2/3;
-    width:90%;
-    border: 2px solid rgba(255, 0, 0, 0.281);
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 8px 0;
-    padding: 1.5% 1%;
-}
 footer{
     grid-column: 2/3;
     grid-row: 3/4;
     background-color: seagreen;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        grid-template-columns: 1fr 16fr 1fr;
+    }
 }

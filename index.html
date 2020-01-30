@@ -11,42 +11,56 @@
 
 <body>
     <header>
-        <h1 id="title">Videogames Survey Form</h1>
-        <p id="description">A Videogame Survey</p>
+        <h1 id="title">Do You Want To Make Money Playing Video Games?</h1>
+        <p id="description">Our team is searching for new video game testers
+             to improve the user experience on our projects, so fill this form
+              if you want to join us in this impresive adventure.
+        </p>
     </header>
     <main>
         <form id="survey-form">
-            <div id="div-name-email">
-                <div id="div-name">
-                    <label id="name-label">Name:</label>
+                <div id="div-name"></div>
+                    <label id="name-label" class="bold-class">First Name</label>
                     <br />
-                    <input type="text" id="name" placeholder="Enter your name" required />
+                    <input type="text" id="name" class="special-input" placeholder="Enter your first name" required />
+                </div>
+                <div id="div-last-name"></div>
+                    <label id="last-name-label" class="bold-class">Last Name</label>
+                    <br />
+                    <input type="text" id="last-name" class="special-input" placeholder="Enter your last name" required />
                 </div>
                 <div id="div-email">
-                    <label id="email-label">Email:</label>
+                    <label id="email-label" class="bold-class">Email</label>
                     <br />
-                    <input type="email" id="email" placeholder="Enter your email" required />
+                    <input type="email" id="email" class="special-input" placeholder="example@games.com" required />
+                </div>
+                <div id="div-phone-number">
+                    <label id="phone-number-label" class="bold-class">Phone Number</label>
+                    <br />
+                    <input type="tel" id="phone-number" class="special-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Example XXX-XXX-XXXX" required />
                 </div>
                 <div id="div-number">
-                    <label id="number-label">Number:</label>
+                    <label id="number-label" class="bold-class">How many video games have you play in the last year?</label>
                     <br />
-                    <input type="number" id="number" min="1" max="5" placeholder="Enter your number between 1 and 5"
+                    <input type="number" id="number" class="special-input" min="1" max="99" placeholder="Enter your number here"
                         required />
                 </div>
                 <div id="div-dropdown">
-                    <label id="dropdown-label">Dropdown List:</label>
+                    <label id="dropdown-label" class="bold-class">
+                        What is your favorite video game genre?</label>
                     <br />
-                    <select id="dropdown">
-                        <option id="option1">1</option>
-                        <option id="option2">2</option>
-                        <option id="option3">3</option>
-                        <option id="option4">4</option>
-                        <option id="option5">5</option>
+                    <select id="dropdown" class="special-input">
+                        <option id="option1">FPS: First Person Shooter</option>
+                        <option id="option2">RTS: Real Time Strategy</option>
+                        <option id="option3">MOBA: Multiplayer Online Battle Arena</option>
+                        <option id="option4">RPG: Role Playing Game</option>
+                        <option id="option5">SV: Survival horror</option>
+                        <option id="option6">MMO: Massively Multiplayer Online</option>
+                        <option id="option7">Other</option>
                     </select>
-                </div>
 
                 <div id="div-radio">
-                    <label id="label-radio">Radio Buttons:</label>
+                    <label id="label-radio" class="bold-class">Radio Buttons:</label>
                     <br />
                     <label id="label-radio1">
                         <input type="radio" name="radio-buttons" id="radio1" value="1" />
@@ -62,7 +76,7 @@
                     </label>
                 </div>
                 <div id="div-checkbox">
-                    <label id="label-checkbox">Checkboxes: </label>
+                    <label id="label-checkbox" class="bold-class">Checkboxes: </label>
                     <br />
                     <label id="label-checkbox1">
                         <input type="checkbox" id="checkbox1" value="1" />
@@ -79,9 +93,9 @@
                 </div>
             </div>
             <div id="div-textarea">
-                <label id="label-textarea">Textarea:</label>
+                <label id="label-textarea" class="bold-class">What's your favorite part in a videogame?:</label>
                 <br />
-                <textarea rows="5" cols="50" placeholder="Hi">
+                <textarea rows="5" cols="50" class="special-input" placeholder="Hi">
                 </textarea>
             </div>
             <div id="div-submit">

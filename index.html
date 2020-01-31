@@ -12,117 +12,111 @@
 <body>
     <header>
         <h1 id="title">Do You Want To Make Money Playing Video Games?</h1>
-        <p id="description">Our team is searching for new video game testers
+        <p id="description">
+            Our team is searching for new video game testers
             to improve the user experience on our projects, so fill this form
             if you want to join us in this impressive adventure.
         </p>
     </header>
-        <main>
-            <form id="survey-form">
-                <div id="div-name">
-                    <label id="name-label" class="bold-class">First Name</label>
-                    <br />
-                    <input type="text" id="name" class="special-input" placeholder="Enter your first name" required />
-                </div>
-                <div id="div-last-name">
-                    <label id="last-name-label" class="bold-class">Last Name</label>
-                    <br />
-                </div>
-                <input type="text" id="last-name" class="special-input" placeholder="Enter your last name" required />
-                <div id="div-email">
-                    <label id="email-label" class="bold-class">Email</label>
-                    <br />
-                    <input type="email" id="email" class="special-input" placeholder="example@games.com" required />
-                </div>
-                <div id="div-phone-number">
-                    <label id="phone-number-label" class="bold-class">Phone Number</label>
-                    <br />
-                    <input type="tel" id="phone-number" class="special-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        placeholder="Example XXX-XXX-XXXX" required />
-                </div>
-                <div id="div-number">
-                    <label id="number-label" class="bold-class">How many video games have you play in the last
-                        year?</label>
-                    <br />
-                    <input type="number" id="number" class="special-input" min="1" max="99"
-                        placeholder="Enter your number here" required />
-                </div>
-                <div id="div-dropdown">
-                    <label id="dropdown-label" class="bold-class">
-                        What is your favorite video game genre?</label>
-                    <br />
-                    <select id="dropdown" class="special-input">
-                        <option id="option1">FPS: First Person Shooter</option>
-                        <option id="option2">RTS: Real Time Strategy</option>
-                        <option id="option3">MOBA: Multiplayer Online Battle Arena</option>
-                        <option id="option4">RPG: Role Playing Game</option>
-                        <option id="option5">SV: Survival horror</option>
-                        <option id="option6">MMO: Massively Multiplayer Online</option>
-                        <option id="option7">Other</option>
-                    </select>
+    <main>
+        <form id="survey-form">
+            <div id="div-name">
+                <label id="name-label" class="bold-class">First Name</label>
+                <input type="text" id="name" class="special-input" placeholder="Enter your first name" required />
+            </div>
+            <div id="div-last-name">
+                <label id="last-name-label" class="bold-class">Last Name</label>
+            </div>
+            <input type="text" id="last-name" class="special-input" placeholder="Enter your last name" required />
+            <div id="div-email">
+                <label id="email-label" class="bold-class">Email</label>
+                <input type="email" id="email" class="special-input" placeholder="example@games.com" required />
+            </div>
+            <div id="div-phone-number">
+                <label id="phone-number-label" class="bold-class">Phone Number</label>
+                <input type="tel" id="phone-number" class="special-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="Example XXX-XXX-XXXX" required />
+            </div>
+            <div id="div-number">
+                <label id="number-label" class="bold-class">How many video games have you play in the last
+                    year?</label>
+                <input type="number" id="number" class="special-input" min="1" max="99"
+                    placeholder="Enter your number here" required />
+            </div>
+            <div id="div-dropdown">
+                <label id="dropdown-label" class="bold-class">
+                    What is your favorite video game genre?</label>
+                <select id="dropdown" class="special-input">
+                    <option id="option1">FPS: First Person Shooter</option>
+                    <option id="option2">RTS: Real Time Strategy</option>
+                    <option id="option3">MOBA: Multiplayer Online Battle Arena</option>
+                    <option id="option4">RPG: Role Playing Game</option>
+                    <option id="option5">SV: Survival horror</option>
+                    <option id="option6">MMO: Massively Multiplayer Online</option>
+                    <option id="option7">Other</option>
+                </select>
 
-                    <div id="div-radio">
-                        <label id="label-radio-title" class="bold-class">How do you like to play?</label>
-                        <br />
-                        <label id="label-radio1">
-                            <input type="radio" name="radio-buttons" id="radio1" value="1" />
-                            Single
-                        </label>
-                        <label id="label-radio2">
-                            <input type="radio" name="radio-buttons" id="radio2" value="2" />
-                            Co-op
-                        </label>
-                        <label id="label-radio3">
-                            <input type="radio" name="radio-buttons" id="radio3" value="3" />
-                            Multiplayer
-                        </label>
-                    </div>
-                    <div id="div-checkbox">
-                        <label id="label-checkbox" class="bold-class label-checkbox">
-                            What kind of video game platform do you prefer? </label>
-                        <br />
-                        <label id="label-checkbox1">
-                            <input type="checkbox" id="checkbox1" value="1" />
-                            Nintento
-                        </label>
-                        <label id="label-checkbox2">
-                            <input type="checkbox" id="checkbox2" value="2" />
-                            Xbox
-                        </label>
-                        <label id="label-checkbox3">
-                            <input type="checkbox" id="checkbox3" value="3" />
-                            PlayStation
-                        </label>
-                        <label id="label-checkbox4">
-                            <input type="checkbox" id="checkbox4" value="4" />
-                            PC
-                        </label>
-                        <label id="label-checkbox5">
-                            <input type="checkbox" id="checkbox5" value="5" />
-                            Mobile
-                        </label>
-                        <label id="label-checkbox6">
-                            <input type="checkbox" id="checkbox6" value="6" />
-                            Other
-                        </label>
-                    </div>
+                <div id="div-radio">
+                    <label id="label-radio-title" class="bold-class">How do you like to play?</label>
+                    <label id="label-radio1">
+                        <input type="radio" name="radio-buttons" id="radio1" value="1" />
+                        Single
+                    </label>
+                    <label id="label-radio2">
+                        <input type="radio" name="radio-buttons" id="radio2" value="2" />
+                        Co-op
+                    </label>
+                    <label id="label-radio3">
+                        <input type="radio" name="radio-buttons" id="radio3" value="3" />
+                        Multiplayer
+                    </label>
                 </div>
-                <div id="div-textarea">
-                    <label id="label-textarea" class="bold-class">What's your favorite video game and why?</label>
-                    <br />
-                    <textarea rows="4" cols="50" class="special-input" placeholder="Write here your answer"></textarea>
+                <div id="div-checkbox">
+                    <label id="label-checkbox" class="bold-class label-checkbox">
+                        What kind of video game platform do you prefer?
+                    </label>
+                    <label id="label-checkbox1">
+                        <input type="checkbox" id="checkbox1" value="1" />
+                        Nintento
+                    </label>
+                    <label id="label-checkbox2">
+                        <input type="checkbox" id="checkbox2" value="2" />
+                        Xbox
+                    </label>
+                    <label id="label-checkbox3">
+                        <input type="checkbox" id="checkbox3" value="3" />
+                        PlayStation
+                    </label>
+                    <label id="label-checkbox4">
+                        <input type="checkbox" id="checkbox4" value="4" />
+                        PC
+                    </label>
+                    <label id="label-checkbox5">
+                        <input type="checkbox" id="checkbox5" value="5" />
+                        Mobile
+                    </label>
+                    <label id="label-checkbox6">
+                        <input type="checkbox" id="checkbox6" value="6" />
+                        Other
+                    </label>
                 </div>
-                <div id="div-submit">
-                    <input type="submit" id="submit" value="Submit" />
-                </div>
-            </form>
-        </main>
+            </div>
+            <div id="div-textarea">
+                <label id="label-textarea" class="bold-class">What's your favorite video game and why?</label>
+                <textarea rows="4" cols="50" class="special-input" placeholder="Write here your answer"></textarea>
+            </div>
+            <div id="div-submit">
+                <input type="submit" id="submit" value="Submit" />
+            </div>
+        </form>
+    </main>
     <footer>
         <div id="footer-logo">
             <p>
                 Golden Mushroom Enterprise
             </p>
-            <img src="https://lh3.googleusercontent.com/proxy/0y-kLToMf0cCxYno3g5fQx_D7kmqXyvXgnHFpyxZcThMlGgjOjmAO2lV1ZqebvffVDUYvXQ0pQiYKN-e-Y-z_J6LUiyTadXI" alt="Golden Mushroom Enterprise Logo">
+            <img src="https://lh3.googleusercontent.com/proxy/0y-kLToMf0cCxYno3g5fQx_D7kmqXyvXgnHFpyxZcThMlGgjOjmAO2lV1ZqebvffVDUYvXQ0pQiYKN-e-Y-z_J6LUiyTadXI"
+                alt="Golden Mushroom Enterprise Logo">
         </div>
         <div id="footer-services">
             <h3>
@@ -151,9 +145,9 @@
     </footer>
     <div id="div-credits">
         <h3>
-            Code with ☕️ & 🍪 by <a href="https://github.com/Ulzahk" target="_blank" alt="link to Ulzahk GitHub Profile" >Ulzahk</a> 2020
+            Code with ☕️ & 🍪 by <a href="https://github.com/Ulzahk" target="_blank"
+                alt="link to Ulzahk GitHub Profile">Ulzahk</a> 2020
         </h3>
     </div>
 </body>
-
 </html>

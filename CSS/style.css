@@ -39,6 +39,7 @@ header{
 header p {
     width: 80%;
     padding-left: 10% ;
+    padding-top: 3%;
 }
 
 main{
@@ -60,7 +61,7 @@ main{
     width: 95%;
     border: 3px solid gray;
     box-sizing: border-box;
-    margin: 8px 0;
+    margin: 1.5% 0;
     padding: 2% 2%;
 }
 
@@ -82,6 +83,10 @@ select {
     display: grid;
 }
 
+#label-radio-title{
+    padding-bottom: 2%;
+}
+
 #div-checkbox{
     padding-top: 2%;
     padding-bottom: 2%;
@@ -89,6 +94,10 @@ select {
     margin-right: 5%;
     border: 2px outset black;
     display: grid;
+}
+
+#label-checkbox{
+    padding-bottom: 2%;
 }
 
 #div-textarea{
@@ -133,7 +142,8 @@ footer{
     text-shadow: -1px 0 #eee, 0 2px #eee, 1px 0 #eee, 0 -1px #eee;
     line-height: 2;
     padding-left: 2%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 footer h3{

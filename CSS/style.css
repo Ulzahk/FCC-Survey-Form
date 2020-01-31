@@ -3,7 +3,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 0.1fr;
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     font-family: 'Press Start 2P', cursive;
@@ -123,13 +123,106 @@ select {
 footer{
     grid-column: 1/4;
     grid-row: 3/4;
-    background-color: aquamarine;
-    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 2%;
+    border: 4px outset gray;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    color: black;
+    text-shadow: -1px 0 #eee, 0 2px #eee, 1px 0 #eee, 0 -1px #eee;
+    line-height: 2;
+    padding-left: 2%;
+    padding-bottom: 1%;
 }
+
+footer h3{
+    text-align: center;
+}
+
+footer a{
+    color: black !important;
+    text-decoration: none;
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+#footer-logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+#footer-logo img{
+    width: 30%;
+    height: auto;
+}
+#footer-services{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#footer-jobs{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#div-credits{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+    text-shadow: -1px 0 #eee, 0 2px #eee, 1px 0 #eee, 0 -1px #eee;
+}
+
+#div-credits a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 0.8fr 2fr 0.6fr 0.1fr;
+    }
+
+    #footer-logo img{
+        width: 60%;
+        height: auto;
+    }
+}
+
 
 @media only screen and (max-width: 600px){
     body{
         grid-template-columns: 1fr 18fr 1fr;
-        grid-template-rows: 1fr 1.5fr 1fr;
+        grid-template-rows: 27% 1fr 1fr;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 1fr 1fr;
+    }
+
+    #footer-logo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #footer-logo img{
+        width: 60%;
+        height: auto;
+    }
+    #footer-services{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #footer-jobs{
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
 }

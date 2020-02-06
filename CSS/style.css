@@ -54,7 +54,8 @@ main{
 }
 
 .bold-class{
-    font-weight: bold;
+    color: white;
+    text-shadow: -1px 0 #000, 0 2px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .special-input{
@@ -81,6 +82,8 @@ select {
     margin-bottom: 2%;
     border: 2px outset black;
     display: grid;
+    color: white;
+    text-shadow: -1px 0 #000, 0 2px #000, 1px 0 #000, 0 -1px #000;
 }
 
 #label-radio-title{
@@ -94,6 +97,8 @@ select {
     margin-right: 5%;
     border: 2px outset black;
     display: grid;
+    color: white;
+    text-shadow: -1px 0 #000, 0 2px #000, 1px 0 #000, 0 -1px #000;
 }
 
 #label-checkbox{

@@ -1,6 +1,8 @@
 # FCC-Survey-Page
-## Objective
+
+### Objective
 Build a Survey Page about any subject following the user requirements.
+
 ### User Requirements
 - Have an title element with an **id title**.
 - Use an **id description**  in a **p** label which contain a descriptive text.

@@ -1,9 +1,9 @@
 # FCC-Survey-Page
 
-### Objective
+### Objective 🎯
 Build a Survey Page about any subject following the user requirements.
 
-### User Requirements
+### User Requirements 📜
 - Have an title element with an **id title**.
 - Use an **id description**  in a **p** label which contain a descriptive text.
 - Use an **form** label with an **id survey-form**.
@@ -17,7 +17,7 @@ Build a Survey Page about any subject following the user requirements.
 -  A **textarea** at the end for additional comments.
 - Use a button with **id submit** to submit all my inputs.
 
-### Tools That Can Be Used
+### Tools That Can Be Used 🛠
 - HTML
 - CSS
 - JavaScript

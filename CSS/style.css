@@ -66,6 +66,26 @@ main{
     padding: 2% 2%;
 }
 
+.special-input[type='text']{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+.special-input[type='email']{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+.special-input[type='tel']{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+.special-input[type='number']{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
 .special-input:focus{
     border: 3px solid black;
 }
@@ -110,6 +130,10 @@ select {
     padding-bottom: 4%;
 }
 
+#div-textarea textarea {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
 #div-submit{
     text-align: center;
 }
@@ -156,8 +180,14 @@ footer h3{
 }
 
 footer a{
-    color: black !important;
+    color: black;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #eee;
+    text-shadow: -1px 0 rgb(14, 13, 13), 0 2px  rgb(14, 13, 13), 1px 0  rgb(14, 13, 13), 0 -1px  rgb(14, 13, 13);
 }
 footer ul{
     list-style: none;
@@ -196,9 +226,16 @@ footer ul{
 
 #div-credits a{
     color: black;
-    text-decoration: none;
-    
+    text-decoration: underline;
+    transition: 0.3s;
 }
+
+#div-credits a:hover{
+    color: #eee;
+    text-shadow: -1px 0 rgb(14, 13, 13), 0 2px  rgb(14, 13, 13), 1px 0  rgb(14, 13, 13), 0 -1px  rgb(14, 13, 13);
+}
+
+
 
 @media only screen and (max-width: 900px){
     body{
